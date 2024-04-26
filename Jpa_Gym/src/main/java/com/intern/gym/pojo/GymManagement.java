@@ -1,6 +1,8 @@
-package com.intern.gym;
+package com.intern.gym.pojo;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -8,7 +10,27 @@ import jakarta.persistence.Table;
 @Table(name="GymManagementReg")
 public class GymManagement {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	long phNum;
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	private String feedback;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -39,8 +61,4 @@ public class GymManagement {
 	public void setPhNum(long phNum) {
 		this.phNum = phNum;
 	}
-	private String lastName;
-	private String email;
-	private String feedback;
-	long phNum;
 }
