@@ -1,0 +1,43 @@
+
+body {
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd75kM7oHoInqyI9aSRVZMc1ZKAKCgVlHwXni-cQjnDmHO8wZO"); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  max-width: 200px;
+}
+.contact-info {
+  font-weight: bold;
+  color: orange;
+}
+.btn-orange {
+  background-color: orange;
+  color: white;
+}
+.btn-light {
+  border-color: orange;
+  color: orange;
+}
+.btn-light:hover {
+  background-color: orange;
+  color: white;
+}
+h1{
+  text-align:center;
+  color:orange;
+  font-weight: bold;
+}
+  .form-container {
+         background-color: #f0f0f0; /* Light grey background */
+         border: 5px solid #ccc; /* Grey border */
+         padding: 20px; /* Space between the form and the border */
+         margin: 20px; /* Margin around the container */
+         width: 40; /* Adjust width to fit its content */
+         border-radius:1rem;
+     }
+form {
+         padding: 20px; /* Padding inside the form */
+         background-color: #ffffff; /* White background for the form itself */
+     }

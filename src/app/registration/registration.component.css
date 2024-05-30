@@ -1,0 +1,39 @@
+
+body {
+ background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd75kM7oHoInqyI9aSRVZMc1ZKAKCgVlHwXni-cQjnDmHO8wZO"); /* Replace with your actual image URL */
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+.logo {
+ max-width: 200px;
+}
+.contact-info {
+ font-weight: bold;
+ color:orange;
+}
+.contact-info span {
+ font-weight: bold;
+ color:orange;
+}
+.contact-info i {
+ margin-right: 5px;
+ color:orange;
+ font-weight: bold;
+}
+.form-group label {
+ font-weight: bold;
+}
+.btn-orange {
+ background-color: orange;
+ color: white;
+}
+.form-container {
+        background-color: #f0f0f0; /* Light grey background */
+        border: 5px solid #ccc; /* Grey border */
+        padding: 20px; /* Space between the form and the border */
+        margin: 20px; /* Margin around the container */
+        width: 40; /* Adjust width to fit its content */
+        border-radius:1rem;
+    }
+

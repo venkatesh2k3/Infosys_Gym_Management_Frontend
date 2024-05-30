@@ -1,0 +1,231 @@
+/* Header top bar */
+.site-top-bar {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    clear: both;
+    /* background-color: #000000; */
+    min-height: 20px;
+    line-height: 20px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .site-top-bar {
+      line-height: 16px;
+      padding: 10px 0;
+    }
+  }
+  header.site-header,.site-nav {
+  
+    padding: 30px 0;
+    display: block;
+    clear: both;
+    background: #fd3c3d;
+    position: relative;
+    color: #d3d3d3;
+    /*min-height: 85px;*/
+    z-index: 100;
+  }
+  
+  .site-top-bar a {
+    margin: 0 18px;
+  }
+  
+  .site-top-bar a[href] span:after {
+    /* Show the mouser hover underline if the a tag have href attribute */
+    display: block;
+  }
+  
+  .site-top-bar span {
+    font-size: 13px;
+    color: #d3d3d3;
+    line-height: 18px;
+    text-align: left;
+    position: relative;
+  }
+  .active {
+    background-color: #04AA6D;
+  }
+  .site-top-bar span:after {
+    /* Underline */
+    content: "";
+    height: 1px;
+    background: white;
+    position: relative;
+    top: -4px;
+    width: 0;
+    transition: 400ms ease;
+    transition-property: width;
+    margin: 0 auto;
+    display: none;
+  }
+  
+  .site-top-bar span:hover:after {
+    width: 100%;
+  }
+  
+  .site-top-bar i.fa {
+    /* Font awesome icons */
+    font-size: 13px;
+    font-family: "FontAwesome", serif;
+    /* color: #fd3c3d; */
+    line-height: 2.231;
+    text-align: left;
+    margin-right: 6px;
+  }
+  
+  .site-top-bar .site-top-bar-left-section {
+    /* left section */
+    text-align: left;
+    float: left;
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .site-top-bar .site-top-bar-left-section a:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .site-top-bar .site-top-bar-left-section {
+      display: inline-block;
+      float: none;
+    }
+    
+    .site-top-bar i.fa {
+        line-height:1.7;
+    }
+  }
+  
+  .site-top-bar .site-top-bar-right-section {
+    /* right section */
+    text-align: right;
+    float: right;
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .site-top-bar .site-top-bar-right-section a:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .site-top-bar .site-top-bar-right-section {
+      text-align: left;
+      display: inline-block;
+      float: none;
+    }
+  }
+  
+ .nav-link:hover {
+    color: orange;          /* Changes text color to orange on hover */
+}
+
+/* Website name */
+.website-name {
+    float: left;
+    line-height: 50px;
+}
+.site-nav-v{
+    color: #d3d3d3;
+}
+.site-nav {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+  }
+  .site-nav li.active > a, .site-nav li:hover > a {
+    /* Active Item */
+    color: #FFFFFF;
+  }
+  .site-nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  
+  .site-nav li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    list-style: none;
+  }
+  .site-nav-toggle {
+    display: none;
+    float: right;
+    margin-top:14px;
+    cursor: pointer;
+  }
+  .site-nav a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 11px 18px;
+    transition: 400ms ease;
+    transition-property: color;
+    font-family: 'Open Sans', sans-serif;
+  }
+/* Social icons */
+.social-icons {
+    float: right;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+/* Bigger width white background */
+.main-nav {
+    /* background-color: white; */
+    padding: 40px;
+    height: 50px;
+}
+
+/* Body grey background */
+body {
+    background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg');
+    background-position: center;
+
+}
+
+/* Center girl pic and text */
+.center-content {
+    text-align: center;
+    margin-top: 0px;
+}
+h1{
+   color:white;
+   font-family:  Arial, Helvetica, sans-serif;
+   font-size:  10px;
+}
+p{
+  font-weight: bold;
+  text-align: left;
+  margin-left: 50px;
+  
+}
+.account-section {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.btn-custom {
+    width: 150px;
+    margin-right: 20px;
+    /* margin: 10px; */
+}
+.btn-orange {
+background-color:#FF7F50;
+color: white;
+margin-right: 20px;
+}
+.right-text {
+text-align: right;
+margin-left:500px; /* Adjusts the left margin to create a gap */
+}
+
