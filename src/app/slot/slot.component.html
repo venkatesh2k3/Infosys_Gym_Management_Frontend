@@ -1,0 +1,129 @@
+<body>
+
+    <div class="site-top-bar">
+  
+        <!-- Bootstrap -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+    
+                    <!-- Left section -->
+                    <div class="site-top-bar-left-section">
+    
+                        <!-- Link -->
+                        <a>
+                            <!-- Font awesome icon -->
+                            <i class="fa fa-clock-o"></i>
+                            <!-- Text -->
+                            <span>Mon to Sat : 07:00 - 11:30</span>
+                        </a>
+    
+                    </div>
+                    <!-- End Left Section -->
+    
+    
+                    <!-- Right Section -->
+                    <div class="site-top-bar-right-section">
+    
+                        <!-- Link -->
+                        <a href="tel:+1801454587">
+                            <!-- Icon -->
+                            <i class="fa fa-phone"></i>
+                            <!-- Text -->
+                            <span>+1 801 4545 87</span>
+                        </a>
+    
+                        <!-- Link -->
+                        <a href="mailto:contact@gmail.com">
+                            <!-- Icon -->
+                            <i class="fa fa-envelope"></i>
+                            <!-- Text -->
+                            <span><span>contact&#64;gmail.com</span>
+                          </span>
+                        </a>
+    
+                    </div>
+                    <!-- End Right Section -->
+    
+                </div>
+            </div>
+        </div>
+        <!-- End Bootstrap -->
+    
+    </div>
+    <!-- End Top Bar -->
+    
+        <!-- Main Navigation -->
+        <header class="site-header" id="sticky-header">
+          <div class="container-fluid">
+              <nav class="site-nav" data-navbar>
+                  <h2><a href="/">STAMINA</a></h2>
+                  <ul class="nav-right">
+                      <li><a href="/userdash">Home</a></li>
+                      <li><a href="/slot">Slot</a></li>
+                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                      <li><a class="active" href="/about">About</a></li>
+                      <!-- <li><a class="active" href="/about">About</a></li> -->
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      
+
+    <!-- Slot Booking and Booking Form Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Slot Booking Section -->
+            <div class="col-md-8">
+                <h3 class="text-center">Slots Available</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4" *ngFor="let slot of slots">
+                        <div class="class-card">
+                            <p><strong>Slot ID:</strong> {{ slot.id }}</p>
+                            <p><strong>Start Time:</strong> {{ slot.startTime }}</p>
+                            <p><strong>End Time:</strong> {{ slot.endTime }}</p>
+                            <p><strong>Available Slots:</strong> {{ slot.slots }}</p>
+                            <p><strong>Trainer Name:</strong> {{ slot.trainerName }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="col-md-4">
+                <h3 class="text-center">Booking Form</h3>
+                <div class="booking-form">
+                    <form [formGroup]="bookingForm" (ngSubmit)="submitBookingForm()">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="User ID" formControlName="userId">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" formControlName="slotId">
+                                <option selected disabled>Slot ID</option>
+                                <option *ngFor="let slot of slots" [value]="slot.id">{{ slot.id }}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" formControlName="plan">
+                                <option selected disabled>Choose Your Plan</option>
+                                <option value="1-Month">1-Month</option>
+                                <option value="3-Months">3-Months</option>
+                                <option value="6-Months">6-Months</option>
+                                <option value="1-Year">1-Year</option>
+                                <!-- Add more options for other time slots -->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-block submit-btn" [disabled]="bookingForm.invalid">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>

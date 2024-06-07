@@ -1,0 +1,128 @@
+/* Orange top bar */
+.site-top-bar {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left and right sections within the top bar */
+  .site-top-bar-left-section,
+  .site-top-bar-right-section {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Right section floats to the right */
+  .site-top-bar-right-section {
+    float: right;
+  }
+  
+  /* Top bar links */
+  .site-top-bar a {
+    color: #fcfdfc;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Top bar icons */
+  .site-top-bar i {
+    margin-right: 5px; /* Applied a consistent margin */
+  }
+
+
+.site-top-bar-right-section a span,
+.site-top-bar-left-section a span {
+  font-size: 16px;
+}
+.site-header .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.site-nav a {
+    color: #333;
+    text-decoration: none;
+  }
+
+.site-nav h2 {
+    margin: 0;
+}
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .site-nav h2 {
+    margin: 0;
+  }
+.nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.nav-right li {
+    margin-left: 15px; /* Adjust spacing as needed */
+}
+
+.nav-right a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-right a.active {
+    background-color: #ddd; /* Active link background */
+    color: #000; /* Active link color */
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  .site-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Body grey background */
+  body {
+/* background-image: url("https://img.freepik.com/free-photo/blurred-bikes_1203-102.jpg?size=626&ext=jpg"); Replace with your actual image URL */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

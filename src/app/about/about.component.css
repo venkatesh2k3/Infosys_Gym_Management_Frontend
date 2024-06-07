@@ -1,0 +1,157 @@
+/* Orange top bar */
+.site-top-bar {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 5px 0;
+  }
+  
+  /* Left and right sections within the top bar */
+  .site-top-bar-left-section,
+  .site-top-bar-right-section {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Right section floats to the right */
+  .site-top-bar-right-section {
+    float: right;
+  }
+  
+  /* Top bar links */
+  .site-top-bar a {
+    color: #fcfdfc;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Top bar icons */
+  .site-top-bar i {
+    margin-right: 5px; /* Applied a consistent margin */
+  }
+
+
+.site-top-bar-right-section a span,
+.site-top-bar-left-section a span {
+  font-size: 16px;
+}
+.site-header .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.site-nav a {
+    color: #333;
+    text-decoration: none;
+  }
+
+.site-nav h2 {
+    margin: 0;
+}
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .site-nav h2 {
+    margin: 0;
+  }
+.nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.nav-right li {
+    margin-left: 15px; /* Adjust spacing as needed */
+}
+
+.nav-right a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-right a.active {
+    background-color: #ddd; /* Active link background */
+    color: #000; /* Active link color */
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  .site-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Body grey background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    /* background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg'); */
+    background-position: 300px 0; /* Corrected position property */
+  }
+
+.about-section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+.about-section p {
+    color: black;
+    text-align: left;
+}
+
+.team-section {
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h5 {
+    color: #FF7F50;
+}
+
+.team-member p {
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+

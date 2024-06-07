@@ -1,0 +1,295 @@
+/* Orange top bar */
+.site-top-bar {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left and right sections within the top bar */
+  .site-top-bar-left-section,
+  .site-top-bar-right-section {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Right section floats to the right */
+  .site-top-bar-right-section {
+    float: right;
+  }
+  
+  /* Top bar links */
+  .site-top-bar a {
+    color: #fcfdfc;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  /* Top bar icons */
+  .site-top-bar i {
+    margin-right: 5px; /* Applied a consistent margin */
+  }
+
+
+.site-top-bar-right-section a span,
+.site-top-bar-left-section a span {
+  font-size: 16px;
+}
+.site-header .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.site-nav a {
+    color: #333;
+    text-decoration: none;
+  }
+
+.site-nav h2 {
+    margin: 0;
+}
+.site-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .site-nav h2 {
+    margin: 0;
+  }
+.nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.nav-right li {
+    margin-left: 15px; /* Adjust spacing as needed */
+}
+
+.nav-right a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-right a.active {
+    background-color: #ddd; /* Active link background */
+    color: #000; /* Active link color */
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  .site-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Body grey background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg');
+    background-position: 300px 0; /* Corrected position property */
+  }
+
+/* Center content */
+.center-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.account-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url('https://raw.githubusercontent.com/PavanKumar8125/gym-management-frontend/main/gym-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.btn-custom {
+    width: 100px;
+}
+
+.btn-orange {
+    background-color: #FF7F50;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #ff5722;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.class-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.class-card h5 {
+    color: #FF7F50;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.testimonials,
+.membership-plans {
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-color: orange;
+    border-width: 3px;
+}
+
+.membership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item {
+    background: #444;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+.testimonial-item small {
+    display: block;
+    margin-top: 10px;
+    color: #FF7F50;
+}
+
+.navbar .logout-btn {
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+.navbar .logout-btn:hover {
+    color: #ff5722;
+}
+
+.right-text {
+    text-align: right;
+    margin-left: 900px;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    margin-left: 800px;
+    align-items: center;
+}
+
+.navbar-nav .btn-customm {
+    margin-left: auto;
+}
+
+.vlog-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.vlog-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.vlog-post {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.vlog-post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.vlog-post h4 {
+    color: #FF7F50;
+    margin-top: 15px;
+}
+
+.vlog-post p {
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}

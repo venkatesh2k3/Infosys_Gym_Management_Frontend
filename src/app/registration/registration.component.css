@@ -4,6 +4,14 @@ body {
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
+ width: 100vw;                   
+  height: 100vh;                  
+  margin: 0;                      
+  padding: 0;                     
+  overflow: hidden;               
+  display: flex;                  /* Added Flexbox */
+  justify-content: center;        /* Center horizontally */
+  align-items: center;  
 }
 .logo {
  max-width: 200px;
@@ -31,9 +39,9 @@ body {
 .form-container {
         background-color: #f0f0f0; /* Light grey background */
         border: 5px solid #ccc; /* Grey border */
-        padding: 20px; /* Space between the form and the border */
-        margin: 20px; /* Margin around the container */
-        width: 40; /* Adjust width to fit its content */
+        padding: 10px; /* Space between the form and the border */
+        margin: 10px; /* Margin around the container */
+        width: 20; /* Adjust width to fit its content */
         border-radius:1rem;
     }
 

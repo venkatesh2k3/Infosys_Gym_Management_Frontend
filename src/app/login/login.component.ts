@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MyServiceService } from '../my-service.service';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,8 +10,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup | any;
-
-  constructor(public service: MyServiceService) {}
+  
+  constructor(public service: MyServiceService, private formBuilder: FormBuilder, private router:Router,) {
+    this.loginForm = this.formBuilder.group({});
+  }
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -28,6 +31,7 @@ export class LoginComponent implements OnInit {
         if (res == 1) {
           this.showSuccessAlert();
           console.log('Login successful');
+          this.router.navigateByUrl('userdash')
         } else {
           this.showFailureAlert();
           console.log('Login unsuccessful');
@@ -44,5 +48,5 @@ export class LoginComponent implements OnInit {
   showFailureAlert(): void {
     alert("Login unsuccessful. Please check your credentials.");
   }
-  
+ 
 }

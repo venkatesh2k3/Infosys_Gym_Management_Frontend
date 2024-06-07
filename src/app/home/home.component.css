@@ -1,231 +1,161 @@
-/* Header top bar */
-.site-top-bar {
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 100%;
-    clear: both;
-    /* background-color: #000000; */
-    min-height: 20px;
-    line-height: 20px;
-  }
-  
-  @media screen and (max-width: 767px) {
-    .site-top-bar {
-      line-height: 16px;
-      padding: 10px 0;
-    }
-  }
-  header.site-header,.site-nav {
-  
-    padding: 30px 0;
-    display: block;
-    clear: both;
-    background: #fd3c3d;
-    position: relative;
-    color: #d3d3d3;
-    /*min-height: 85px;*/
-    z-index: 100;
-  }
-  
-  .site-top-bar a {
-    margin: 0 18px;
-  }
-  
-  .site-top-bar a[href] span:after {
-    /* Show the mouser hover underline if the a tag have href attribute */
-    display: block;
-  }
-  
-  .site-top-bar span {
-    font-size: 13px;
-    color: #d3d3d3;
-    line-height: 18px;
-    text-align: left;
-    position: relative;
-  }
-  .active {
-    background-color: #04AA6D;
-  }
-  .site-top-bar span:after {
-    /* Underline */
-    content: "";
-    height: 1px;
-    background: white;
-    position: relative;
-    top: -4px;
-    width: 0;
-    transition: 400ms ease;
-    transition-property: width;
-    margin: 0 auto;
-    display: none;
-  }
-  
-  .site-top-bar span:hover:after {
-    width: 100%;
-  }
-  
-  .site-top-bar i.fa {
-    /* Font awesome icons */
-    font-size: 13px;
-    font-family: "FontAwesome", serif;
-    /* color: #fd3c3d; */
-    line-height: 2.231;
-    text-align: left;
-    margin-right: 6px;
-  }
-  
-  .site-top-bar .site-top-bar-left-section {
-    /* left section */
-    text-align: left;
-    float: left;
-    display: block;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .site-top-bar .site-top-bar-left-section a:first-child {
-      margin-left: 0;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    .site-top-bar .site-top-bar-left-section {
-      display: inline-block;
-      float: none;
-    }
-    
-    .site-top-bar i.fa {
-        line-height:1.7;
-    }
-  }
-  
-  .site-top-bar .site-top-bar-right-section {
-    /* right section */
-    text-align: right;
-    float: right;
-    display: block;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .site-top-bar .site-top-bar-right-section a:last-child {
-      margin-right: 0;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    .site-top-bar .site-top-bar-right-section {
-      text-align: left;
-      display: inline-block;
-      float: none;
-    }
-  }
-  
- .nav-link:hover {
-    color: orange;          /* Changes text color to orange on hover */
+/* Resetting defaults and setting font */
+.site-header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Website name */
-.website-name {
-    float: left;
-    line-height: 50px;
-}
-.site-nav-v{
-    color: #d3d3d3;
-}
 .site-nav {
-    margin: 0;
-    padding: 0;
-    display: block;
-    float: right;
-  }
-  .site-nav li.active > a, .site-nav li:hover > a {
-    /* Active Item */
-    color: #FFFFFF;
-  }
-  .site-nav ul {
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.site-nav h2 {
+  margin: 0;
+}
+
+.nav-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.nav-right li {
+  margin-left: 15px; /* Adjust spacing as needed */
+}
+
+.nav-right a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-right a.active {
+  background-color: #ddd; /* Active link background */
+  color: #000; /* Active link color */
+}
   
-  .site-nav li {
-    margin: 0;
-    padding: 0;
-    display: block;
-    float: left;
-    list-style: none;
-  }
-  .site-nav-toggle {
-    display: none;
-    float: right;
-    margin-top:14px;
-    cursor: pointer;
-  }
-  .site-nav a {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 29px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 11px 18px;
-    transition: 400ms ease;
-    transition-property: color;
-    font-family: 'Open Sans', sans-serif;
-  }
-/* Social icons */
-.social-icons {
-    float: right;
-    margin-right: 20px;
-    line-height: 40px;
-}
-
-/* Bigger width white background */
-.main-nav {
-    /* background-color: white; */
-    padding: 40px;
-    height: 50px;
-}
-
-/* Body grey background */
 body {
-    background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg');
-    background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg');
+  background-position: 300px 0; /* Corrected position property */
 
 }
 
-/* Center girl pic and text */
-.center-content {
-    text-align: center;
-    margin-top: 0px;
+/* Orange top bar */
+.site-top-bar {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 5px 0;
 }
-h1{
-   color:white;
-   font-family:  Arial, Helvetica, sans-serif;
-   font-size:  10px;
+
+/* Left and right sections within the top bar */
+.site-top-bar-left-section,
+.site-top-bar-right-section {
+  display: inline-block;
+  vertical-align: middle;
 }
-p{
+
+/* Right section floats to the right */
+.site-top-bar-right-section {
+  float: right;
+}
+
+/* Top bar links */
+.site-top-bar a {
+  color: #fcfdfc;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Top bar icons */
+.site-top-bar i {
+  margin-right: 5px; /* Applied a consistent margin */
+}
+
+/* Header styling */
+.site-header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+/* Navigation styling */
+.site-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Active navigation link */
+.site-nav a.active {
   font-weight: bold;
-  text-align: left;
-  margin-left: 50px;
-  
-}
-.account-section {
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-.btn-custom {
-    width: 150px;
-    margin-right: 20px;
-    /* margin: 10px; */
-}
-.btn-orange {
-background-color:#FF7F50;
-color: white;
-margin-right: 20px;
-}
-.right-text {
-text-align: right;
-margin-left:500px; /* Adjusts the left margin to create a gap */
 }
 
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Center-aligned content */
+.center-content {
+  text-align: center;
+  color: #fcfdfc;
+}
+
+/* Page title */
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Responsive images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Account section styling */
+.account-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fcfdfc;
+}
+
+.account-section form {
+  text-align: center;
+}
+
+/* Orange button */
+.btn-orange {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* Hover effect on orange button */
+.btn-orange:hover {
+  background-color: #e64a19;
+}
+
+/* Font size for spans in top bar sections */
+.site-top-bar-right-section a span,
+.site-top-bar-left-section a span {
+  font-size: 16px;
+}

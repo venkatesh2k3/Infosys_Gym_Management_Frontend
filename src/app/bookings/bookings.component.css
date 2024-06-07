@@ -42,7 +42,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg');
+    /* background-image: url('https://kalanidhithemes.com/live-preview/landing-page/fitclub/html/images/slider-bg-image.jpg'); */
     background-position:300
   }
   
@@ -170,3 +170,23 @@
   .site-top-bar-left-section a span {
     font-size: 16px;
   }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

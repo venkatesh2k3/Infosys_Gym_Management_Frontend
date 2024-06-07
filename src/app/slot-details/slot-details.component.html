@@ -70,26 +70,23 @@
             </nav>
         </div>
     </header>
-    
-    
-    
-   
-  
-      <!-- Body Content -->
-                <br>
-                <br>
-                <br>
-                <br>
-              <div    class="col-md-12 center-content">
-                  <h1>MAKE IT A LIFESTYLE,</h1>
-                  <h1>NOT A DUTY</h1>
-                  <!-- <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYx3_3iwTuU1ELF9gib6P-CtswVlVW8qO7uZ_je87DjIi8kfDT" alt="Girl" class="img-fluid mt-3"> -->
       
-      </div>
-      <!-- Bootstrap JS, Popper.js, and jQuery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  
-  
+
+    <!-- Slot Booking and Booking Form Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Slot Booking Section -->
+            <div class="col-md-8">
+                <h3 class="text-center">Slots Available</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4" *ngFor="let slot of slots">
+                        <div class="class-card">
+                            <p><strong>Slot ID:</strong> {{ slot.id }}</p>
+                            <p><strong>Start Time:</strong> {{ slot.startTime }}</p>
+                            <p><strong>End Time:</strong> {{ slot.endTime }}</p>
+                            <p><strong>Available Slots:</strong> {{ slot.slots }}</p>
+                            <p><strong>Trainer Name:</strong> {{ slot.trainerName }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>

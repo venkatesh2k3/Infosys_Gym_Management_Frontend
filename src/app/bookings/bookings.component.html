@@ -1,0 +1,93 @@
+<body>
+    <div class="site-top-bar">
+  
+        <!-- Bootstrap -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+    
+                    <!-- Left section -->
+                    <div class="site-top-bar-left-section">
+    
+                        <!-- Link -->
+                        <a>
+                            <!-- Font awesome icon -->
+                            <i class="fa fa-clock-o"></i>
+                            <!-- Text -->
+                            <span>Mon to Sat : 07:00 - 11:30</span>
+                        </a>
+    
+                    </div>
+                    <!-- End Left Section -->
+    
+    
+                    <!-- Right Section -->
+                    <div class="site-top-bar-right-section">
+    
+                        <!-- Link -->
+                        <a href="tel:+1801454587">
+                            <!-- Icon -->
+                            <i class="fa fa-phone"></i>
+                            <!-- Text -->
+                            <span>+1 801 4545 87</span>
+                        </a>
+    
+                        <!-- Link -->
+                        <a href="mailto:contact@gmail.com">
+                            <!-- Icon -->
+                            <i class="fa fa-envelope"></i>
+                            <!-- Text -->
+                            <span><span>contact&#64;gmail.com</span>
+                          </span>
+                        </a>
+    
+                    </div>
+                    <!-- End Right Section -->
+    
+                </div>
+            </div>
+        </div>
+        <!-- End Bootstrap -->
+    
+    </div>
+    <!-- End Top Bar -->
+    
+        <!-- Main Navigation -->
+        <header class="site-header" id="sticky-header">
+          <div class="container-fluid">
+              <nav class="site-nav" data-navbar>
+                  <h2><a href="/">STAMINA</a></h2>
+                  <ul class="nav-right">
+                      <li><a href="/admindash">Home</a></li>
+                      <li><a href="/Trainers">Trainers</a></li>
+                      <li><a href="/bookings">Bookings</a></li>
+                      <li><a href="/slots">Slots</a></li>
+                      <li><a href="/reglist">User Details</a></li>
+                      <!-- <li><a class="active" href="/about">About</a></li> -->
+                  </ul>
+              </nav>
+          </div>
+      </header>
+    
+    
+    <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Plans</th>
+        <th>Booking Time</th>
+        <th>Slot ID</th>
+        <th>User ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings">
+        <td>{{ booking.id }}</td>
+        <td>{{ booking.plans }}</td>
+        <td>{{ booking.bookingTime }}</td>
+        <td>{{ booking.slotID }}</td>
+        <td>{{ booking.userID }}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>

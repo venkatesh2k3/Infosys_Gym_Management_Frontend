@@ -18,8 +18,7 @@ export class RegistrationComponent implements OnInit{
       lastName: new FormControl('', [Validators.required]),
       email:new FormControl('',[Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required]),
-      phNum:new FormControl('',[ Validators.required]),
-      feedback: new FormControl('',[])
+      phNum:new FormControl('',[ Validators.required])
 
     });
   }
@@ -39,5 +38,6 @@ const data = this.registrationForm.value;
 }
 showSuccessAlert(): void {
   alert("Congratulations! Your registration was successful.");
+  this.registrationForm.reset();
 }
 }

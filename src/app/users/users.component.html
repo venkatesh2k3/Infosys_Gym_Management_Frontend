@@ -64,32 +64,31 @@
                     <li><a href="/Trainers">Trainers</a></li>
                     <li><a href="/bookings">Bookings</a></li>
                     <li><a href="/slots">Slots</a></li>
-                    <li><a href="/reglist">User Details</a></li>
+                    <li><a href="/userdetails">User Details</a></li>
                     <!-- <li><a class="active" href="/about">About</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
-    
-    
-    
-   
-  
-      <!-- Body Content -->
-                <br>
-                <br>
-                <br>
-                <br>
-              <div    class="col-md-12 center-content">
-                  <h1>MAKE IT A LIFESTYLE,</h1>
-                  <h1>NOT A DUTY</h1>
-                  <!-- <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYx3_3iwTuU1ELF9gib6P-CtswVlVW8qO7uZ_je87DjIi8kfDT" alt="Girl" class="img-fluid mt-3"> -->
       
-      </div>
-      <!-- Bootstrap JS, Popper.js, and jQuery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  
+<table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.userId }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phNum }}</td>
+      </tr>
+    </tbody>
+  </table>
   
