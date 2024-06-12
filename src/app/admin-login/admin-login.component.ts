@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MyServiceService } from '../my-service.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-admin-login',
+  templateUrl: './admin-login.component.html',
+  styleUrl: './admin-login.component.css'
 })
-export class LoginComponent implements OnInit {
+export class AdminLoginComponent {
   loginForm: FormGroup | any;
   
   constructor(public service: MyServiceService, private formBuilder: FormBuilder, private router:Router,) {
@@ -26,19 +26,16 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.valid) {
       const data = this.loginForm.value;
       console.log(data);
-      this.service.GetData(data).subscribe((res: any) => {
+      this.service.AdminLogin(data).subscribe((res: any) => {
         console.log(res, "login response");
         if (res == 0) {
           this.showFailureAlert();
           console.log('Login unsuccessful');
          
         } else { 
-          this.service.setResValue(res);
           this.showSuccessAlert();
           console.log('Login successful');
-
-          console.log(res);
-          this.router.navigateByUrl('/userdash')
+          this.router.navigateByUrl('/admindash')
         }
         this.loginForm.reset();
       });

@@ -6,6 +6,20 @@ import { Injectable } from '@angular/core';
 })
 export class MyServiceService {
 
+  private _resValue: any;
+
+  setResValue(res: any): void {
+    this._resValue = res;
+  }
+
+  getResValue(): any {
+    return this._resValue;
+  }
+  logout(): void {
+    this._resValue = null;
+    // Clear other data or tokens here if necessary
+  }
+
   constructor(public http:HttpClient) {  }
   public PostData(a:any)
   {
@@ -15,13 +29,18 @@ export class MyServiceService {
   {
     return this.http.post('http://192.168.0.108:8181/login',a);
   }
+
+  public AdminLogin(a:any)
+  {
+    return this.http.post('http://192.168.0.108:8181/admin/login',a);
+  }
   public GetSlot()
   {
     return this.http.get('http://192.168.0.108:8181/api/slots');
   }
-  public postSlot()
+  public postSlot(a:any)
   {
-    return this.http.get('http://192.168.0.108:8181/api/slots');
+    return this.http.post('http://192.168.0.108:8181/api/slots',a);
   }
   public GetBookings()
   {
@@ -35,6 +54,15 @@ export class MyServiceService {
   {
     return this.http.get<any[]>('http://localhost:8181/gym-list');
   }
+  public deleteSlot(a:any)
+  {
+    return this.http.delete<any[]>(`http://localhost:8181/api/slots/${a}`);
+  }
+  public CancelBooking(a:any)
+  {
+    return this.http.delete<any[]>(`http://localhost:8181/api/bookings/${a}`);
+  }
+
 }
 
  

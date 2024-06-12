@@ -13,6 +13,7 @@ import { UserDashComponent } from './user-dash/user-dash.component';
 import { BookingsComponent } from './bookings/bookings.component';
 import { SlotDetailsComponent } from './slot-details/slot-details.component';
 import { UsersComponent } from './users/users.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 const routes: Routes = [
   {
     path: '',
@@ -65,6 +66,10 @@ const routes: Routes = [
   {
     path: 'reglist',
     component: UsersComponent
+  },
+  {
+    path: 'adminlogin',
+    component: AdminLoginComponent
   },
 
 

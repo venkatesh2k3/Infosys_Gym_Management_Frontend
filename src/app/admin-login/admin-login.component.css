@@ -1,0 +1,53 @@
+
+body {
+    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd75kM7oHoInqyI9aSRVZMc1ZKAKCgVlHwXni-cQjnDmHO8wZO");
+    background-size: cover;         /* Ensures the image covers the entire background */
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    width: 100vw;                   /* Ensures the width is 100% of the viewport width */
+    height: 100vh;                  /* Ensures the height is 100% of the viewport height */
+    margin: 0;                      /* Removes default margin */
+    padding: 0;                     /* Removes default padding */
+    overflow: hidden;               /* Prevents scrolling */
+    display: flex;                  /* Added Flexbox */
+    justify-content: center;        /* Center horizontally */
+    align-items:center
+  }
+  
+  .logo {
+    max-width: 200px;
+  }
+  .contact-info {
+    font-weight: bold;
+    color: orange;
+  }
+  .btn-orange {
+    background-color: orange;
+    color: white;
+  }
+  .btn-light {
+    border-color: orange;
+    color: orange;
+  }
+  .btn-light:hover {
+    background-color: orange;
+    color: white;
+  }
+  h1{
+    text-align:center;
+    color:orange;
+    font-weight: bold;
+  }
+    .form-container {
+           background-color: #f0f0f0; /* Light grey background */
+           border: 5px solid #ccc; /* Grey border */
+           padding: 20px; /* Space between the form and the border */
+           margin: 20px; /* Margin around the container */
+           width: 40; /* Adjust width to fit its content */
+           border-radius:1rem;
+       }
+  form {
+           padding: 20px; /* Padding inside the form */
+           background-color: #ffffff; /* White background for the form itself */
+       }
+  

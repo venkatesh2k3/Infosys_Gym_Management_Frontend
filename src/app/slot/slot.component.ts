@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MyServiceService } from '../my-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slot',
@@ -10,17 +11,24 @@ import { MyServiceService } from '../my-service.service';
 export class SlotComponent implements OnInit {
   slots: any[] = [];
   bookingForm: FormGroup |any;
+  userId: any;
+  constructor(private formBuilder: FormBuilder,private myService: MyServiceService) { 
 
-  constructor(private formBuilder: FormBuilder, private myService: MyServiceService) { }
-
+  }
+ 
   ngOnInit(): void {
-    this.initForm();
+    const res = this.myService.getResValue();
+    this.userId=res;
+    this.initForm(res);
     this.getSlots();
+   
+    // this.setUserId(res)
+    
   }
 
-  private initForm(): void {
+  private initForm(res:any): void {
     this.bookingForm = this.formBuilder.group({
-      userId: ['', Validators.required],
+      userId: [, Validators.required],
       slotId: [null, Validators.required],
       plan: [null, Validators.required]
     });
@@ -34,6 +42,9 @@ export class SlotComponent implements OnInit {
       },
       (error: any) => console.error('Error fetching slots:', error)
     );
+  }
+  private setUserId(res: any): void {
+    this.bookingForm.patchValue({ userId: res }); // Set userId value in the form
   }
   
   submitBookingForm(): void {

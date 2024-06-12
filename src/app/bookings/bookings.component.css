@@ -189,4 +189,40 @@ table {
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
-  
+  /* Style for the whole table */
+.p-datatable-custom {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table header */
+.header {
+  background-color: #007bff; /* Change to your desired header color */
+  color: white;
+  font-weight: bold;
+}
+
+/* Style for table rows */
+tr {
+  border-bottom: 1px solid #dee2e6; /* Add a border between rows */
+}
+
+/* Style for table cells */
+td {
+  padding: 10px;
+}
+
+/* Style for action buttons */
+.p-button-danger {
+  background-color: #dc3545; /* Change to your desired button color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-danger:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}

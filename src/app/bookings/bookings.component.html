@@ -70,24 +70,35 @@
       </header>
     
     
-    <table>
-    <thead>
+    <!-- Import PrimeNG styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeicons/4.1.0/primeicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primeng/12.0.0/primeng.min.css">
+
+<!-- Import PrimeNG table module -->
+<p-table [value]="bookings" class="p-datatable-custom">
+  <ng-template pTemplate="header">
       <tr>
-        <th>ID</th>
-        <th>Plans</th>
-        <th>Booking Time</th>
-        <th>Slot ID</th>
-        <th>User ID</th>
+          <th class="header">ID</th>
+          <th class="header">Plans</th>
+          <th class="header">Booking Time</th>
+          <th class="header">Slot ID</th>
+          <th class="header">User ID</th>
+          <th class="header">Action</th>
       </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let booking of bookings">
-        <td>{{ booking.id }}</td>
-        <td>{{ booking.plans }}</td>
-        <td>{{ booking.bookingTime }}</td>
-        <td>{{ booking.slotID }}</td>
-        <td>{{ booking.userID }}</td>
+  </ng-template>
+  <ng-template pTemplate="body" let-booking>
+      <tr>
+          <td>{{ booking.id }}</td>
+          <td>{{ booking.plans }}</td>
+          <td>{{ booking.bookingTime }}</td>
+          <td>{{ booking.slotID }}</td>
+          <td>{{ booking.userID }}</td>
+          <td>
+              <button type="button" (click)="cancelBooking(booking.id)" class="p-button-danger">Cancel Booking</button>
+          </td>
       </tr>
-    </tbody>
-  </table>
+  </ng-template>
+</p-table>
+
+
 </body>

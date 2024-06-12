@@ -18,10 +18,12 @@ import { BookingsComponent } from './bookings/bookings.component';
 import { UsersComponent } from './users/users.component';
 import { SlotDetailsComponent } from './slot-details/slot-details.component';
 import { UserDashComponent } from './user-dash/user-dash.component';
-
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     LoginComponent,
@@ -36,13 +38,15 @@ import { UserDashComponent } from './user-dash/user-dash.component';
     UsersComponent,
     SlotDetailsComponent,
     UserDashComponent,
+    AdminLoginComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
     ReactiveFormsModule,
-    HttpClientModule 
+    HttpClientModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -86,7 +86,40 @@
                             <p><strong>End Time:</strong> {{ slot.endTime }}</p>
                             <p><strong>Available Slots:</strong> {{ slot.slots }}</p>
                             <p><strong>Trainer Name:</strong> {{ slot.trainerName }}</p>
+                            <button class="btn btn-danger" (click)="deleteSlot(slot.id)">Delete Slot</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <h3 class="text-center">Manage Slots</h3>
+                <form [formGroup]="slotForm" (ngSubmit)="addSlot()">
+                  <div class="form-group">
+                    <label for="startTime">Start Time</label>
+                    <input type="time" class="form-control" id="startTime" formControlName="startTime" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="endTime">End Time</label>
+                    <input type="time" class="form-control" id="endTime" formControlName="endTime" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="slots">Available Slots</label>
+                    <input type="number" class="form-control" id="slots" formControlName="slots" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="trainerName">Trainer Name</label>
+                    <input type="text" class="form-control" id="trainerName" formControlName="trainerName" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Slot</button>
+                </form>
+              </div>
+        </div>
+    </div>
+          <!-- Scripts -->
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        
