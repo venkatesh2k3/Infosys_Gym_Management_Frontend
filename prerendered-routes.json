@@ -1,0 +1,18 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/admindash",
+    "/adminlogin",
+    "/blog",
+    "/bookings",
+    "/contact",
+    "/login",
+    "/reg",
+    "/reglist",
+    "/slot",
+    "/slots",
+    "/trainers",
+    "/userdash"
+  ]
+}
